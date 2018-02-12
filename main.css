@@ -3,18 +3,18 @@
 }
 
 body {
-  background: url('clouds.jpg');
+  background: url('images/clouds.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .content {
   position: relative;
-  top: 6vw;
+  top: 5vw;
   width: 25vw;
   text-align: center;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(0, 0, 0, 0.15);
   padding: 1.5vw;
   border-radius: 25%;
 }
@@ -24,8 +24,8 @@ body {
 }
 
 img {
+  margin: 1vw;
   width: 18vw;
-  margin: 0;
 }
 
 .weather {
@@ -38,7 +38,14 @@ img {
 
 button {
   font-size: 1vw;
-  margin-top: 1vw;
+  margin: 1vw 0;
   border-radius: 2vw;
   outline: none;
+  font-weight: bold;
+}
+
+a {
+  font-size: 0.75vw;
+  text-decoration: none;
+  color: #555;
 }

@@ -11,9 +11,32 @@ $(document).ready(function() {
 
       $.getJSON(api, function(data) {
         $(".location").html(data.name);
-        $(".icon").attr("src", data.weather[0].icon);
         $(".weather").html(data.weather[0].description);
         $(".temperature").html(Math.round(data.main.temp * 9/5 + 32) + " \u00B0F");
+
+        switch (data.weather[0].main) {
+          case "Rain":
+            $(".icon").attr("src", "images/414925-weather/png/010-rain-3.png");
+            break;
+          case "Clouds":
+            $(".icon").attr("src", "images/414925-weather/png/003-cloudy-4.png");
+            break;
+          case "Clear":
+            $(".icon").attr("src", "images/414925-weather/png/050-sun.png");
+            break;
+          case "Snow":
+            $(".icon").attr("src", "images/414925-weather/png/008-snow-1.png");
+            break;
+          case "Thunderstorm":
+            $(".icon").attr("src", "images/414925-weather/png/012-rain-2.png");
+            break;
+          case "Drizzle":
+            $(".icon").attr("src", "images/414925-weather/png/002-drop.png");
+            break;
+          default:
+            $(".icon").attr("src", "images/414925-weather/png/007-rainbow-3.png");
+        }
+
       });
     });
   }
