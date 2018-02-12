@@ -4,8 +4,8 @@ $(document).ready(function() {
 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
-      let lat = Math.round(position.coords.latitude);
-      let lon = Math.round(position.coords.longitude);
+      let lat = position.coords.latitude;
+      let lon = position.coords.longitude;
 
       var api = `https://fcc-weather-api.glitch.me/api/current?lat=${lat}&lon=${lon}`;
 
