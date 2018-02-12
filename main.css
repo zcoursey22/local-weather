@@ -1,0 +1,44 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background: url('clouds.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  position: relative;
+  top: 6vw;
+  width: 25vw;
+  text-align: center;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 1.5vw;
+  border-radius: 25%;
+}
+
+.location {
+  font-size: 3vw;
+}
+
+img {
+  width: 18vw;
+  margin: 0;
+}
+
+.weather {
+  font-size: 1.5vw;
+}
+
+.temperature {
+  font-size: 5vw;
+}
+
+button {
+  font-size: 1vw;
+  margin-top: 1vw;
+  border-radius: 2vw;
+  outline: none;
+}
